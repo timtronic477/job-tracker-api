@@ -81,7 +81,7 @@ def search_application(query: str, db: Session = Depends(get_db)):
     results = db.query(models.Application).filter(
         (models.Application.company.ilike(search_pattern)) |
         (models.Application.position.ilike(search_pattern))
-    )
+    ).all()
     return results
 
 @app.get('/applications/recent', response_model=list[JobApplicationResponse])
