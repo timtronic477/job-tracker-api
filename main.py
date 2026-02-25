@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from typing import Optional
 from datetime import datetime, timedelta
 
-from database import get_db
+from database import get_db, engine, Base
 import models
 
 Base.metadata.create_all(bind=engine)
