@@ -8,7 +8,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENV DATABASE_URL=postgresql://postgres:yPHtXdZeCsndVMvSTZEsdzAQQCBKHeSI@switchyard.proxy.rlwy.net:25991/railway
 
 EXPOSE 8000
 
