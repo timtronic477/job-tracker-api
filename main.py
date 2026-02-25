@@ -7,6 +7,8 @@ from datetime import datetime, timedelta
 from database import get_db
 import models
 
+Base.metadata.create_all(bind=engine)
+
 app = FastAPI()
 
 class JobApplicationCreate(BaseModel):
