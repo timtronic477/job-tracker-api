@@ -1,0 +1,9 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "DOCKERFILE"
+  },
+  "deploy": {
+    "startCommand": "DATABASE_URL=postgresql://postgres:yPHtXdZeCsndVMvSTZEsdzAQQCBKHeSI@switchyard.proxy.rlwy.net:25991/railway uvicorn main:app --host 0.0.0.0 --port 8000"
+  }
+}
